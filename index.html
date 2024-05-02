@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> JS Switch Case </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="content"> 
+
+     <h1> JS Switch Case </h1>
+     <br>
+     <p>
+      The switch statement is used to perform different actions based on different conditions.
+      <br>
+      Use the switch statement to select one of many code blocks to be executed.
+     </p>
+
+<div id="demo"> </div>
+
+</div>
+
+  <script>
+
+    let day;
+
+    switch ( new Date ().getDay() )
+    {
+      case 0:
+        day = "images/aa.jpg";
+        break;
+      case 1:
+        day = "images/ab.png";
+        break;
+      case 2:
+        day = "images/ac.png";
+        break;
+      case 3:
+        day  = "images/ad.jpg";
+        break;
+      case 4:
+        day ="images/ae.jpg";
+        break;
+      case 5:
+        day = "images/af.jpg";
+        break;
+      case 6:
+        day = "images/bb.png";
+        break;            
+    }
+    
+    document.getElementById("demo").innerHTML = '<img src="' + day + '">';
+    
+    </script> 
+
+
+
+</body>
+</html>
